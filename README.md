@@ -13,11 +13,29 @@ cd coating-performance-decision-support
 pip install -r requirements.txt
 ```
 
-### 3) Add Required Local Datasets
+---
 
-Raw datasets are intentionally excluded from the repository.
+## Required Datasets (Not Included)
 
-After downloading, place them in the following structure:
+Raw datasets are intentionally excluded to keep the repository lightweight.
+
+### ORNL Machining Force Dataset
+
+Download from the official NIST portal:
+
+https://data.nist.gov/od/id/mds2-3121
+
+### Thesis Experimental Dataset
+
+Place your experimental Excel file here:
+
+```text
+01_data/
+  thesis_raw/
+    Complete Analysis.xlsx
+```
+
+Full expected structure:
 
 ```text
 01_data/
@@ -30,12 +48,9 @@ After downloading, place them in the following structure:
     Complete Analysis.xlsx
 ```
 
-ORNL machining force dataset:
+---
 
-Download from:
-https://data.nist.gov/od/id/mds2-3121
-
-### 4) Execute Full Pipeline
+## Execute Full Pipeline
 
 ```bash
 python 02_src/compute_cri.py
@@ -43,9 +58,11 @@ python 02_src/compute_msi.py
 python 02_src/compute_risk_matrix.py
 ```
 
-### Generated Outputs
+---
 
-```
+## Generated Outputs
+
+```text
 07_outputs/
   coating_robustness_index.csv
   machining_severity_index.csv
@@ -57,7 +74,9 @@ python 02_src/compute_risk_matrix.py
 
 ## Technical Scope
 
-- Severity-normalized comparative risk framework
-- Not a finite element wear simulator
-- Not an absolute tool-life predictor
+- Severity-normalized comparative risk framework  
+- Signal-processing–based machining severity modeling  
+- Experimental coating robustness quantification  
+- Not a finite element wear simulator  
+- Not an absolute tool-life predictor  
 - Designed for coating engineering decision-support
