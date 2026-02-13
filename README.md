@@ -213,4 +213,9 @@ Expected local structure:
   thesis_raw/
     Complete Analysis .xlsx
 
+### Sample data
+For quick inspection without downloading raw datasets, see:
+01_data_sample/
+
+
 
