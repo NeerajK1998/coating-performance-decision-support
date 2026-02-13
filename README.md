@@ -201,4 +201,16 @@ After downloading/extracting, place the cutting dataset here:
 ### Thesis experimental dataset
 Place the excel here:
 01_data/thesis_raw/Complete Analysis .xlsx
+**
+
+Expected local structure:
+01_data/
+  ornl_raw/
+    Cutting data/
+    FTF data/
+    Impact data/
+    Configurations/
+  thesis_raw/
+    Complete Analysis .xlsx
+
 
