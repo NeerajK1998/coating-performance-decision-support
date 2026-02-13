@@ -183,3 +183,22 @@ Designed for coating engineering evaluation and decision-support.
 Neeraj Kulkarni  
 M.Sc. Mechatronics & Robotics  
 Coating Engineering Research
+
+---
+
+## Data (not included in this repo)
+
+Raw datasets are not stored in this repository to keep it lightweight and GitHub-friendly.
+
+### ORNL machining force dataset
+Download from the official NIST portal:
+https://data.nist.gov/od/id/mds2-3121
+
+After downloading/extracting, place the cutting dataset here:
+
+01_data/ornl_raw/Cutting data/...
+
+### Thesis experimental dataset
+Place the excel here:
+01_data/thesis_raw/Complete Analysis .xlsx
+
